@@ -2,19 +2,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Форма Реєстрації</title>
+    <title>Вхід</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h2>Форма Реєстрації</h2>
-<form action="/registration-servlet" method="POST">
-    Ім'я: <label>
-    <input type="text" name="name" required>
-</label><br>
-    Прізвище: <label>
-    <input type="text" name="surname" required>
-</label><br>
-    Емейл: <input type="email" name="email" required><br>
-    Пароль: <input type="password" name="password" required><br>
-    <input type="submit" value="Реєструватися">
-</form>
-<html>
+<div class="login-container">
+    <h2>Вхід</h2>
+    <form action="login" method="post">
+        <div class="login-group">
+            <input type="text" name="username" placeholder="Ім'я користувача" required>
+        </div>
+        <div class="login-group">
+            <input type="password" name="password" placeholder="Пароль" required>
+        </div>
+        <div class="login-group">
+            <input type="submit" value="Увійти">
+        </div>
+    </form>
+    <a href="registration.jsp">Реєстрація</a>
+</div>
+</body>
+</html>
