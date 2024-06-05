@@ -2,42 +2,26 @@ package com.example.deaneryoffice;
 
 import java.io.*;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import java.util.logging.*;
 
 @WebServlet("/auth")
 public class LoginServlet extends HttpServlet {
+    private static final String EMPLOYEE_PASSWORD = "admin123"; // Static admin password
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
+        String userType = request.getParameter("userType");
 
-        if ("login".equals(action)) {
-            String name = request.getParameter("name");
+        if ("student".equals(userType)) {
+            response.sendRedirect("search.jsp");
+        } else if ("employee".equals(userType)) {
             String password = request.getParameter("password");
-
-            // Тут має бути ваша логіка перевірки імені користувача та пароля
-            // Наприклад, перевірка з базою даних
-
-            response.sendRedirect("registration-success.jsp"); // Перенаправлення на головну сторінку
-
-        } else if ("register".equals(action)) {
-            String name = request.getParameter("name");
-            String password = request.getParameter("password");
-            String email = request.getParameter("email");
-
-            request.setAttribute("name", name);
-            request.setAttribute("email", email);
-
-            // Перенаправлення на сторінку успіху
-            request.getRequestDispatcher("/registration-success.jsp").forward(request, response);
-            // Логіка реєстрації
-            // Збір даних з форми реєстрації
-            // Тут має бути ваша логіка збереження даних користувача
-
-            // Після реєстрації можна перенаправити користувача на сторінку входу або на головну сторінку
-            // response.sendRedirect("login.jsp"); // Перенаправлення на сторінку входу
+            if (password.equals(EMPLOYEE_PASSWORD)) {
+                response.sendRedirect("search.jsp");
+            } else {
+                response.sendRedirect("index.jsp?error=incorrect_password");
+            }
         }
-//        else {
-//            response.sendRedirect("error.jsp"); // Перенаправлення на сторінку помилки
-//        }
     }
 }

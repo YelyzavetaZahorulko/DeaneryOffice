@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     background-color: #f0f8ff;
     color: #333;
@@ -34,29 +33,10 @@ label {
     font-weight: 500;
 }
 
-input[type="radio"] {
-    -webkit-appearance: none; /* Remove default radio button style */
-    -moz-appearance: none;
-    appearance: none;
-    width: 18px; /* Size of the square */
-    height: 18px;
-    border: 2px solid #007acc; /* Border color */
-    border-radius: 3px; /* Square border radius */
-    background-color: transparent; /* Transparent background */
-    outline: none; /* Remove outline */
-    margin-right: 5px; /* Spacing between radio button and label */
-    vertical-align: middle; /* Align vertically with label */
-}
-
-input[type="radio"]:checked {
-    background-color: #007acc; /* Background color when checked */
-}
-
-input[type="radio"] + label {
-    vertical-align: middle; /* Align label with radio button */
-}
-
+input[type="text"],
+input[type="date"],
 input[type="email"],
+input[type="tel"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
