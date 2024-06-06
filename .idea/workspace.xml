@@ -10,22 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc473a9-bda1-4f94-897d-d26e7fe92dde" name="Changes" comment="file student">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/StudentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/students" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/password.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/search_results.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/DeaneryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/editGroups.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/CSVAuthentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/Group.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/SearchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/SearchServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/deaneryoffice/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registration-success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/students.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/students.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/search_results.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -160,7 +157,7 @@
       <workItem from="1715807294274" duration="16254000" />
       <workItem from="1716979013096" duration="14651000" />
       <workItem from="1717453070790" duration="16738000" />
-      <workItem from="1717529096959" duration="19630000" />
+      <workItem from="1717529096959" duration="26918000" />
     </task>
     <servers />
   </component>

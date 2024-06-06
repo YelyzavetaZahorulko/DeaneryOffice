@@ -5,7 +5,7 @@
 <html>
 <head>
   <title>Search Students</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="search.css">
 </head>
 <body>
 <h2>Search Students</h2>
@@ -30,5 +30,6 @@
   <% } %>
 </ul>
 <% } %>
+<a href="index.jsp">Go to Home Page</a>
 </body>
 </html>

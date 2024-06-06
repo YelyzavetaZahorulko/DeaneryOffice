@@ -1,3 +1,4 @@
+/* main.css */
 body {
     background-color: #f0f8ff;
     color: #333;
@@ -24,6 +25,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 122, 204, 0.2);
     max-width: 400px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 label {
@@ -33,11 +35,7 @@ label {
     font-weight: 500;
 }
 
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="tel"],
-input[type="password"] {
+input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -67,15 +65,21 @@ button:hover {
     background-color: #005f99;
 }
 
-a {
-    color: #007acc;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    font-family: 'Roboto', sans-serif;
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    width: 100%;
 }
 
-a:hover {
-    text-decoration: underline;
+ul li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.1);
+}
+
+ul li:hover {
+    background-color: #f0f8ff;
 }

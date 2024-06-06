@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
         } else if ("employee".equals(userType)) {
             String password = request.getParameter("password");
             if (password.equals(EMPLOYEE_PASSWORD)) {
-                response.sendRedirect("search.jsp");
+                response.sendRedirect("editGroups.jsp");
             } else {
                 response.sendRedirect("index.jsp?error=incorrect_password");
             }

@@ -24,12 +24,11 @@ public class SearchServlet extends HttpServlet {
             groups = (List<Group>) attribute;
         } else {
             groups = new ArrayList<>();
-            // For demo purposes, we add some sample data
-            Group groupA = new Group("Group A");
+            Group groupA = new Group("ІА-34");
             groupA.addStudent(new Student("John", "Doe", groupA));
             groupA.addStudent(new Student("Alice", "Johnson", groupA));
 
-            Group groupB = new Group("Group B");
+            Group groupB = new Group("ІА-33");
             groupB.addStudent(new Student("Jane", "Smith", groupB));
 
             groups.add(groupA);
